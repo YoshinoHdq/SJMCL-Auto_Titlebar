@@ -28,7 +28,7 @@ Two versions available:
 ## Installation
 
 1. Download the .sjmclx file from Releases
-2. Open SJMCL → Settings → Extension Management → Import
+2. Open SJMCL → Settings → Extension Management → Import. Supports file selection and drag-and-drop import
 3. Enable it and hover over the window top
 
 ## Compatibility
