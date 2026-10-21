@@ -12,7 +12,7 @@ All notable changes to this project are documented in this file.
 - Consolidated English and Chinese UI into one package with a runtime language switch.
 - Persisted settings in `settings.json` and migrated the legacy `enabled.txt` value.
 - Added cleanup for listeners, timers, injected styles, and the custom drag strip.
-- Added `npm run typecheck`, standard build scripts, and a GitHub Release workflow.
+- Added `npm run typecheck` and standard build scripts.
 
 ### Removed
 
