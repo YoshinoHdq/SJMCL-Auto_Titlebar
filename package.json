@@ -1,0 +1,20 @@
+{
+  "name": "sjmcl-auto-titlebar",
+  "private": true,
+  "version": "0.2.0",
+  "description": "Auto-hide title bar extension for SJMCL with runtime English/Chinese switching.",
+  "type": "module",
+  "scripts": {
+    "build": "node ./scripts/build.mjs",
+    "dev": "node ./scripts/dev.mjs",
+    "typecheck": "tsc --noEmit",
+    "bump": "node ./scripts/bump.mjs"
+  },
+  "devDependencies": {
+    "commander": "^13.1.0",
+    "esbuild": "^0.25.3",
+    "fflate": "^0.8.2",
+    "semver": "^7.7.2",
+    "typescript": "^5.3.0"
+  }
+}

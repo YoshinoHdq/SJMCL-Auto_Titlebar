@@ -1,8 +1,8 @@
-<div align=center>
+<div align="center">
 
 # Auto Titlebar
 
-鼠标悬停时显示标题栏，移出时自动隐藏 🖱️
+鼠标悬停在窗口顶部时显示标题栏，移开后自动隐藏。
 
 **[English](README.en.md) · 简体中文**
 
@@ -12,38 +12,56 @@
 
 ## 简介
 
-Auto Titlebar 是一款 SJMCL 扩展，当鼠标悬停在启动器窗口顶部时自动显示标题栏，移出窗口时自动隐藏。
+Auto Titlebar 是一款基于新版 SJMCL 扩展脚手架重构的界面扩展。它兼容 SJMCL 1.3.0 之后的窗口标题栏结构，并支持在扩展设置页中运行时切换英文和中文。
 
-提供两个版本：
-- **英文版**（org.yoshino.auto_titlebar）
-- **中文版**（org.yoshino.auto_titlebar.zh）
+## 功能
 
-## 功能特色
-
-- 🖱️ 鼠标悬停时显示标题栏
-- 👆 移出窗口区域时自动隐藏
-- ⚙️ 可在扩展设置页开关功能
-- 📦 轻量化设计，无额外依赖
+- 鼠标移动到窗口顶部时显示标题栏
+- 鼠标移出标题栏后自动隐藏
+- 标题栏隐藏时保留顶部拖动区域，窗口仍可移动
+- 首页卡片和扩展设置页均可控制开关
+- 运行时切换 English / 中文
+- 自动迁移旧版 `enabled.txt` 开关状态
+- 兼容新旧标题栏 DOM 标识
 
 ## 使用方法
 
-1. 从 Releases 下载对应的 .sjmclx 文件
-2. 打开 SJMCL → 设置 → 扩展管理 → 导入，插件支持选择文件导入和拖动导入
-3. 启用即可
+1. 从 Releases 下载 `org.yoshino.auto_titlebar-0.2.0.sjmclx`
+2. 打开 SJMCL → 设置 → 扩展，选择添加扩展
+3. 导入并启用扩展
+4. 在扩展设置页或首页卡片中打开自动隐藏
+5. 在扩展设置页顶部切换语言
+
+如果安装过旧的中文版 `org.yoshino.auto_titlebar.zh`，请先卸载它。新版只使用一个扩展包，并在内部切换语言，避免重复加载标题栏逻辑。
 
 ## 兼容性
 
-- 最低启动器版本: 1.1.3
+- 最低启动器版本：1.3.0
+- 目标平台：SJMCL 在 Windows、Linux 和 macOS 上提供的自定义标题栏
 
+## 开发
+
+```bash
+npm install
+npm run typecheck
+npm run dev
+npm run build
+```
+
+构建结果：
+
+- `dist/org.yoshino.auto_titlebar/`
+- `dist/org.yoshino.auto_titlebar-0.2.0.sjmclx`
 
 ## 相关项目与文档
 
 - [SJMCL 扩展开发文档](https://mc.sjtu.cn/sjmcl/dev/extension/)
+- [SJMCL 扩展 API](https://mc.sjtu.cn/sjmcl/dev/extension/api.html)
 - [awesome-SJMCL-extensions](https://github.com/SJMC-Dev/awesome-SJMCL-extensions)
+
 ## 许可
 
 MIT
-
 
 ---
 

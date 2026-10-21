@@ -1,8 +1,8 @@
-<div align=center>
+<div align="center">
 
 # Auto Titlebar
 
-Shows title bar on hover, auto-hides when mouse leaves 🖱️
+Shows the title bar when hovering at the top edge and hides it automatically after the pointer leaves.
 
 **English · [简体中文](README.md)**
 
@@ -10,40 +10,58 @@ Shows title bar on hover, auto-hides when mouse leaves 🖱️
 
 ---
 
-## 简介
+## Overview
 
-Auto Titlebar is a SJMCL extension that shows the titlebar when hovering over the launcher window top and hides it when the mouse moves away.
-
-Two versions available:
-- **English** (org.yoshino.auto_titlebar)
-- **中文版** (org.yoshino.auto_titlebar.zh)
+Auto Titlebar is an SJMCL interface extension rebuilt with the official extension scaffold. It supports the custom window title bar introduced in SJMCL 1.3.0 and switches between English and Chinese at runtime from the extension settings page.
 
 ## Features
 
-- 🖱️ Show titlebar on hover
-- 👆 Auto-hide when mouse leaves
-- ⚙️ Toggle on/off in extension settings
-- 📦 Lightweight, no extra dependencies
+- Reveal the title bar by moving the pointer to the top edge
+- Hide it after the pointer leaves
+- Keep a top drag strip so the window remains draggable while the title bar is hidden
+- Toggle the feature from both the home card and the settings page
+- Switch between English and Chinese at runtime
+- Migrate the legacy `enabled.txt` state automatically
+- Support both the old and current title bar DOM identifiers
 
 ## Installation
 
-1. Download the .sjmclx file from Releases
-2. Open SJMCL → Settings → Extension Management → Import. Supports file selection and drag-and-drop import
-3. Enable it and hover over the window top
+1. Download `org.yoshino.auto_titlebar-0.2.0.sjmclx` from Releases
+2. Open SJMCL → Settings → Extensions and add the package
+3. Import and enable the extension
+4. Enable auto-hide from the settings page or home card
+5. Use the language selector at the top of the settings page
+
+If the legacy Chinese package `org.yoshino.auto_titlebar.zh` is installed, uninstall it first. The new release uses one package and switches languages internally to avoid duplicate title bar logic.
 
 ## Compatibility
 
-- Minimum launcher version: 1.1.3
+- Minimum launcher version: 1.3.0
+- Targets SJMCL custom title bars on Windows, Linux, and macOS
 
+## Development
 
-## Related Projects & Documentation
+```bash
+npm install
+npm run typecheck
+npm run dev
+npm run build
+```
 
-- [SJMCL Extension Documentation](https://mc.sjtu.cn/sjmcl/dev/extension/)
+Build outputs:
+
+- `dist/org.yoshino.auto_titlebar/`
+- `dist/org.yoshino.auto_titlebar-0.2.0.sjmclx`
+
+## Related projects and documentation
+
+- [SJMCL extension documentation](https://mc.sjtu.cn/sjmcl/dev/extension/)
+- [SJMCL extension API](https://mc.sjtu.cn/sjmcl/dev/extension/api.html)
 - [awesome-SJMCL-extensions](https://github.com/SJMC-Dev/awesome-SJMCL-extensions)
+
 ## License
 
 MIT
-
 
 ---
 
