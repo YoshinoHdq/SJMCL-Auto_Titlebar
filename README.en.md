@@ -10,6 +10,12 @@ Shows the title bar when hovering at the top edge and hides it automatically aft
 
 ---
 
+> **This project is no longer maintained**
+>
+> Auto-hide titlebar has been merged into [Launcher Theme Enhancer](https://github.com/YoshinoHdq/SJMCL-Launcher_Theme_Enhancer) and is maintained there. New users should install Launcher Theme Enhancer instead; existing users can uninstall this extension and migrate — the titlebar toggle lives in its home card and settings page.
+>
+> This repository is kept for archival purposes only. No further features or fixes will be released.
+
 ## Overview
 
 Auto Titlebar is an SJMCL interface extension rebuilt with the official extension scaffold. It supports the custom window title bar introduced in SJMCL 1.3.0 and switches between English and Chinese at runtime from the extension settings page.

@@ -10,6 +10,12 @@
 
 ---
 
+> **本项目已停止维护**
+>
+> 自动隐藏标题栏功能已合并进 [Launcher Theme Enhancer](https://github.com/YoshinoHdq/SJMCL-Launcher_Theme_Enhancer)，并在那里继续维护。新用户请直接安装 Launcher Theme Enhancer；已有用户可以卸载本扩展后迁移，标题栏开关位于其首页卡片和设置页。
+>
+> 本仓库仅作历史归档，不再发布功能更新或修复。
+
 ## 简介
 
 Auto Titlebar 是一款基于新版 SJMCL 扩展脚手架重构的界面扩展。它兼容 SJMCL 1.3.0 之后的窗口标题栏结构，并支持在扩展设置页中运行时切换英文和中文。
